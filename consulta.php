@@ -24,11 +24,6 @@
 
 
 </table>
-<?php session_start();
-if (!isset($_SESSION['Usuario'])) {
-  header("Location: user.php"); // Redirige al login si no ha iniciado sesión
-  exit();
-}
-?>
+
 <p><a href="javascript:history.back();"><img src="./Static/img/back.png" alt="Regresar"></a></p>
 <?php  include 'includes/footer.php'; ?>
