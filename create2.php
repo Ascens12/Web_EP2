@@ -29,7 +29,7 @@ if (!isset($_SESSION['Usuario'])) {
        <input type="button" value="Enviar Datos"  class="formulario_btn" onclick="validacion()">                    
        </div> 
        <br></br>
-       <script src='Static/js/validaciones.js'></script>         
+       <script src='Static/js/userValidacion.js'></script>         
 </form>
 
 <p><a href="javascript:history.back();"><img src="./Static/img/back.png" alt="Regresar"></a></p>
