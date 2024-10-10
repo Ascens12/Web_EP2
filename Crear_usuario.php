@@ -13,10 +13,10 @@ if (!isset($_SESSION['Usuario'])) {
         $email = $_POST['correo'];
         $type = "Usuario";
 
-        $sql =" insert into usuarios(Usuario, Contrasena, tipo) values ('$user', '$pasw', '$type');";
+        $sql =" insert into usuarios(Usuario, Contrasena, Correo, tipo) values ('$user', '$pasw', '$email','$type');";
 
         $execute = mysqli_query($conn,$sql);
-        sleep(3);
+        sleep(2);
         header("Location:create2.php");
 
         ?>

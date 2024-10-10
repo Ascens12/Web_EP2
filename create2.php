@@ -14,16 +14,16 @@ if (!isset($_SESSION['Usuario'])) {
       Usuario:</label>
        <input type="text" name="usuario" id="Usuario" class="formulario_input">
    </div> 
+   <div class="form_container">
+     <label for="contrasena" class="formulario_label">
+      Contraseña:</label>
+       <input type="password" name="contrasena" id="Contrasena" class="formulario_input">
+   </div> 
         <div class="form_container">
          <label for="correo" class="formulario_label">
-         Contrasena:</label>
+         Correo:</label>
          <input type="text" name="correo" id="Correo" class="formulario_input">
-        </div>           
-    <div class="form_container">
-     <label for="contrasena" class="formulario_label">
-      Tipo:</label>
-       <input type="password" name="contrasena" id="Contrasena" class="formulario_input">
-   </div>        
+        </div>          
         <BR>
      <div class="form_container">                    
        <input type="button" value="Enviar Datos"  class="formulario_btn" onclick="validacion()">                    
