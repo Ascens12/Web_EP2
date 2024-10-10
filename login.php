@@ -14,5 +14,8 @@
 <div class="form_container">            
     <input type="button" class="formulario_btn" value="Enviar" onclick=validacion();> 
 </div> 
+<div class="form_container">
+    <input type="button" class="formulario_btn" value="Crear Usuario" onclick="window.location.href='create2.php'">
+</div>
 </form> 
 <script src="Static/js/validaciones.js"></script>  

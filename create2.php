@@ -7,8 +7,7 @@ if (!isset($_SESSION['Usuario'])) {
 
 <?php  include 'includes/header.php'?>
 
- <h2>Registrar Usuario</h2>
- <h3><a href="logout.php">Cerrar sesion</p></a></h3>
+ <h2>Crear Usuario</h2>
   <form method="POST" name="frm1" id="frm1" action="Crear_usuario.php">
    <div class="form_container">
      <label for="usuario" class="formulario_label">
@@ -16,14 +15,14 @@ if (!isset($_SESSION['Usuario'])) {
        <input type="text" name="usuario" id="Usuario" class="formulario_input">
    </div> 
         <div class="form_container">
-         <label for="precio" class="formulario_label">
+         <label for="correo" class="formulario_label">
          Contrasena:</label>
-         <input type="password" name="contrasena" id="Contrasena" class="formulario_input">
+         <input type="text" name="correo" id="Correo" class="formulario_input">
         </div>           
     <div class="form_container">
-     <label for="nombre" class="formulario_label">
+     <label for="contrasena" class="formulario_label">
       Tipo:</label>
-       <input type="text" name="tipo" id="tipo" class="formulario_input">
+       <input type="password" name="contrasena" id="Contrasena" class="formulario_input">
    </div>        
         <BR>
      <div class="form_container">                    
@@ -33,6 +32,6 @@ if (!isset($_SESSION['Usuario'])) {
        <script src='Static/js/validaciones.js'></script>         
 </form>
 
-<p><a href="admin.php"><img src="./Static/img/back.png"></p>
+<p><a href="javascript:history.back();"><img src="./Static/img/back.png" alt="Regresar"></a></p>
            
 <?php  include 'includes/footer.php'; ?>

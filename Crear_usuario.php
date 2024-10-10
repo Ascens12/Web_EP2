@@ -10,7 +10,8 @@ if (!isset($_SESSION['Usuario'])) {
 <?php 
         $user = $_POST['usuario'];
         $pasw = $_POST['contrasena'];
-        $type = $_POST['tipo'];
+        $email = $_POST['correo'];
+        $type = "Usuario";
 
         $sql =" insert into usuarios(Usuario, Contrasena, tipo) values ('$user', '$pasw', '$type');";
 

@@ -20,7 +20,7 @@
             header("Location: admin.php");
         }else{
             $_SESSION['Usuario'] = $user; 
-            header("Location: usuario.php");
+            header("Location: user.php");
         }
     }else{
         header("Location: login.php");
