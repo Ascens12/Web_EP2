@@ -1,9 +1,4 @@
-<?php session_start();
-if (!isset($_SESSION['Usuario'])) {
-  header("Location: login.php"); // Redirige al login si no ha iniciado sesión
-  exit();
-}
-?>
+
 
 <?php  include 'includes/header.php'?>
 

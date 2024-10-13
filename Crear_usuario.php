@@ -4,12 +4,6 @@ require 'vendor/autoload.php'; // Asegúrate de ajustar la ruta si es necesario
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-session_start();
-if (!isset($_SESSION['Usuario'])) {
-    header("Location: login.php"); // Redirige al login si no ha iniciado sesión
-    exit();
-}
-
 include 'Static/connect/db.php';
 include 'includes/header.php';
 
@@ -40,7 +34,7 @@ if ($execute) {
 
         // Contenido del correo
         $mail->isHTML(true);
-        $mail->Subject = 'Confirmación de Creación de Usuario';
+        $mail->Subject = 'Confirmacion de Creacion de Usuario';
         $mail->Body    = "<p>Hola <strong>$user</strong>,</p>
                           <p>Se ha creado tu cuenta correctamente. Aquí tienes tus datos de acceso:</p>
                           <p><strong>Usuario:</strong> $user</p>
@@ -48,7 +42,7 @@ if ($execute) {
 
         // Enviar el correo
         $mail->send();
-        echo "El correo de confirmación ha sido enviado a $email.";
+        //echo "El correo de confirmación ha sido enviado a $email.";
 
         sleep(2);
         header("Location: login.php");

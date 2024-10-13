@@ -1,6 +1,5 @@
 <?php  include 'Static/connect/db.php'?>
 <?php  include 'includes/header.php'?>
-<h2><a href="logout.php">Cerrar sesion</p></a></h2>
 <table class=table-primary>
     <thead>
     <tr>
