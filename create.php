@@ -1,4 +1,5 @@
 <?php session_start();
+
 if (!isset($_SESSION['Usuario'])) {
   header("Location: login.php"); // Redirige al login si no ha iniciado sesión
   exit();
@@ -22,7 +23,12 @@ if (!isset($_SESSION['Usuario'])) {
          onkeypress="if((event.keyCode < 48) || (event.keyCode >57)){
          event.returnValue=false;
          } "  maxlength="4">
-        </div>                  
+        </div>          
+    <div class="form_container">
+      <label for="horario" class="formulario_label">
+      Horario:</label>
+      <input type="text" name="horario" id="horario" class="formulario_input">
+    </div>        
         <BR>
      <div class="form_container">                    
        <input type="button" value="Enviar Datos"  class="formulario_btn" onclick="validacion()">                    

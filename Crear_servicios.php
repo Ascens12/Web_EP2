@@ -10,8 +10,9 @@ if (!isset($_SESSION['Usuario'])) {
 <?php 
         $servicio = $_POST['nombre'];
         $precio = $_POST['precio'];
+        $horario = $_POST['horario'];
 
-        $sql =" insert into servicios(nombre, precio) values ('$servicio', $precio);";
+        $sql =" insert into servicios(nombre, precio, horario) values ('$servicio', $precio, '$horario');";
 
         $execute = mysqli_query($conn,$sql);
         sleep(3);

@@ -28,6 +28,7 @@ $user = $_SESSION['Usuario'];
         <th>ID</th>
         <th>Servicio</th>
         <th>Costo</th>
+        <th>Horario</th>
         <th>Eliminar</th>
         <th>Actualizar</th>
         
@@ -43,6 +44,7 @@ $user = $_SESSION['Usuario'];
         <th><?php echo $rows['id']; ?></th>
         <th><?php echo $rows['nombre']; ?></th>
         <th><?php echo $rows['precio']; ?></th>
+        <th><?php echo $rows['horario     ']?></th>
         <th><a href= "eliminar.php?id=<?php echo $rows['id']?>"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash-off" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M3 3l18 18" />
@@ -69,4 +71,5 @@ $user = $_SESSION['Usuario'];
 </table>
 
 <p><a href="admin.php"><img src="./Static/img/back.png"></p>
+
 <?php  include 'includes/footer.php'; ?>

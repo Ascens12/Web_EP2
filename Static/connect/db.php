@@ -3,5 +3,5 @@ $conn= mysqli_connect(
     'localhost',
     'root',
     '',
-    'salona'
+    'BarbershopA'
 );

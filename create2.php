@@ -25,7 +25,7 @@
        </div> 
        <br></br>
        <script src='Static/js/userValidacion.js'></script>         
-</form>
+  </form>
 
 <p><a href="javascript:history.back();"><img src="./Static/img/back.png" alt="Regresar"></a></p>
            
