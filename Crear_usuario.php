@@ -24,7 +24,7 @@ if ($execute) {
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
         $mail->Username   = 'aoco220155@upemor.edu.mx';
-        $mail->Password   = 'GAe86_10';
+        $mail->Password   = '';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
